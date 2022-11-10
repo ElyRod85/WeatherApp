@@ -7,7 +7,7 @@ const API_Key = "bb2fc989eb5f2bb9274bd369eccb9dc0";
 button.addEventListener('click', () => {
     const cityInput = inputTxt.value;
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&APPID=${API_Key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&APPID=${API_Key}`)
         .then(res => res.json())
         .then(data => {
             inputTxt.value = " ";
